@@ -13,15 +13,20 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 400px;
-    height: 625px;
+    width: 420px;
+    height: 725px;
     border-radius: 70px;
     color: white;
     
 }
 .link {
     font-size: 20px;
+    color:grey
     
+}
+.text{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
 }
 a{
     text-decoration: none;
@@ -46,9 +51,9 @@ form{
     flex-direction: column;
     margin: 20px;
     padding: 20px;
-    font-family: 'Montserrat', sans-serif;
+  
 }
-h1,h2{
+h2{
 padding: 20px;
 font-family: 'Montserrat', sans-serif;
 }

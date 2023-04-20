@@ -6,39 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heart health❣️</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="body">
       <div id="container">
-        <h1>Calculate the daily limit of saturated fats <br> <span class="link">      <a
-          href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats"
-          >Based on AHA Recommendation *</a></span></h1>
-  
+        <h2>
+          The daily limit of saturated fats <br />
+          <span class="link">
+            <a
+              href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats"
+              >Based on AHA Recommendation *</a
+            ></span
+          >
+        </h2>
         <form>
-          <p>The American Heart Association recommends  <br>
-            aiming for a dietary pattern that achieves 5% to 6% of calories from saturated fat.</p>
-        <p>Input your estimated daily amount of calories</p>
+          <p class="text">
+            The American Heart Association recommends <br />
+            aiming for a dietary pattern that achieves 5% to 6% of calories from
+            saturated fat.
+          </p>
+          <p class="text">Input your estimated daily amount of calories:</p>
 
-        <input class="forminput"
-          type="text"
-          placeholder="Calories ..."
-          id="dailyCallories"/>
+          <input 
+            class="forminput"
+            type="text"
+            placeholder="Calories ..."
+            id="dailyCalories"
+          />
 
-          <div>
-            <span id="totalAmountOfSatFats"></span>
+          <br />
+
+          <button id="btn">Calculate</button>
+          <div class="text">
+            <p>Result:</p>
+            <span id="totalAmountOfSatFats" ></span>
           </div>
         </form>
       </div>
 
       <div id="container">
-        <h2>Calorie calculator <span>to maintain your current weight</span></h2>
+        <h2>Calorie calculator <br> <span class="link">to maintain your current weight</span></h2>
         <form>
-          <p>Age <input class="forminput" type="text" id="age" /> years</p>
-          <p>
+          <p class="text">Age <input class="forminput" type="text" id="age" /> years</p>
+          <p class="text">
             Height
             <input class="forminput" type="text" id="heightFt" /> ft.<input
               class="forminput"
@@ -47,13 +69,13 @@
             />
             in.
           </p>
-          <p>Weight <input class="forminput" type="text" id="weight" />lbs.</p>
-          <label
+          <p class="text">Weight <input class="forminput" type="text" id="weight" />lbs.</p>
+          <label class="text"
             >Sex:
             <input type="radio" id="male" name="sex" />
             <input type="radio" id="female" name="sex" />
           </label>
-<br>
+          <br />
           <select class="activityLevel">
             <option disabled>Select your activity level</option>
             <option>Inactive🧑🏼‍💻</option>
@@ -61,14 +83,14 @@
             <option>Active🏃🏼</option>
             <option>Very active💪🏼</option>
           </select>
-<br>
+          <br />
           <button id="calculate">Calculate</button>
         </form>
         <div>
-        <!-- <p>Your estimated daily calorie needs (rounded to the nearest 50 calories) are:</p> -->
-        <span id="dailyAmountOfCalories"></span>
-        <!-- <span>calories</span> -->
-      </div>
+          <!-- <p>Your estimated daily calorie needs (rounded to the nearest 50 calories) are:</p> -->
+          <span id="dailyAmountOfCalories"></span>
+          <!-- <span>calories</span> -->
+        </div>
       </div>
     </div>
 
