@@ -60,5 +60,12 @@ font-family: 'Montserrat', sans-serif;
 button{
     font-family: 'Montserrat', sans-serif;
 }
+
+@media all and (max-width: 500px){
+#body{
+    display:flex;
+    flex-direction: column;
+}
+}
    
 
