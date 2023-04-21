@@ -41,7 +41,7 @@
 
           <input 
             class="forminput"
-            type="text"
+            type="number"
             placeholder="Calories ..."
             id="dailyCalories"
           />
@@ -59,38 +59,34 @@
       <div id="container">
         <h2>Calorie calculator <br> <span class="link">to maintain your current weight</span></h2>
         <form>
-          <p class="text">Age <input class="forminput" type="text" id="age" /> years</p>
-          <p class="text">
-            Height
-            <input class="forminput" type="text" id="heightFt" /> ft.<input
-              class="forminput"
-              type="text"
-              id="heightIn"
-            />
-            in.
+          <p class="text">Age <input class="forminput" type="number" id="age" /> years</p>
+          <p class="text"> Height
+            <input class="forminput" type="number" id="height" /> sm.
+           
           </p>
-          <p class="text">Weight <input class="forminput" type="text" id="weight" />lbs.</p>
-          <label class="text"
-            >Sex:
-            <input type="radio" id="male" name="sex" />
-            <input type="radio" id="female" name="sex" />
+
+          <p class="text">Weight 
+          <input class="forminput" type="number" id="weight" />kg.</p>
+          <label class="text">Sex:
+            <input type="radio" id="male" name="sex"  /> M
+            <input type="radio" id="female" name="sex" /> F
           </label>
           <br />
-          <select class="activityLevel">
+          <select class="activityLevel" id="activityLevel">
             <option disabled>Select your activity level</option>
-            <option>Inactive🧑🏼‍💻</option>
-            <option>Somewhat active🚶🏼</option>
-            <option>Active🏃🏼</option>
-            <option>Very active💪🏼</option>
+            <option value="1.2">Inactive🧑🏼‍💻</option>
+            <option value="1.375">Somewhat active🚶🏼</option>
+            <option value="1.55">Active🏃🏼</option>
+            <option value="1.725">Very active💪🏼</option>
           </select>
           <br />
           <button id="calculate">Calculate</button>
+          <div class="text">
+            <p>Result:</p>
+            <span id="dailyAmountOfCalories"></span>
+          </div>
         </form>
-        <div>
-          <!-- <p>Your estimated daily calorie needs (rounded to the nearest 50 calories) are:</p> -->
-          <span id="dailyAmountOfCalories"></span>
-          <!-- <span>calories</span> -->
-        </div>
+
       </div>
     </div>
 
