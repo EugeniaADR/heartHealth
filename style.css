@@ -2,13 +2,13 @@ body {
     background-image: url(http://physicalsolutionsli.com/wp-content/uploads/2020/02/heart-diet-1024x680.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position:center;
-}
-#body {
+    position: center;
+  }
+  #body {
     display: flex;
     justify-content: space-between;
-}
-#container {
+  }
+  #container {
     background-color: rgba(94, 9, 81, 0.7);
     display: flex;
     flex-direction: column;
@@ -17,55 +17,48 @@ body {
     height: 725px;
     border-radius: 70px;
     color: white;
-    
-}
-.link {
+  }
+  .link {
     font-size: 20px;
-    color:grey
-    
-}
-.text{
-    font-family: 'EB Garamond', serif;
+    color: grey;
+  }
+  .text {
+    font-family: "EB Garamond", serif;
     font-size: 18px;
-}
-a{
+  }
+  a {
     text-decoration: none;
-    color:grey
-    
-}
-
-.forminput {
+    color: grey;
+  }
+  
+  .forminput {
     width: 70px;
     height: 30px;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-.activityLevel{
+    font-family: "Montserrat", sans-serif;
+  }
+  .activityLevel {
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-
-}
-form{
+    font-family: "Montserrat", sans-serif;
+  }
+  form {
     display: flex;
     flex-direction: column;
     margin: 18px;
     padding: 15px;
+  }
+  h2 {
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  button {
+    font-family: "Montserrat", sans-serif;
+  }
   
-}
-h2{
-padding: 20px;
-font-family: 'Montserrat', sans-serif;
-}
-button{
-    font-family: 'Montserrat', sans-serif;
-}
-
-@media all and (max-width: 500px){
-#body{
-    display:flex;
-    flex-direction: column;
-}
-}
-   
-
+  @media all and (max-width: 500px) {
+    #body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
